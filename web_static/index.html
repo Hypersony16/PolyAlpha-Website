@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>PolyAlpha Terminal</title>
+  <link rel="stylesheet" href="/style.css" />
+</head>
+<body>
+  <div class="shell">
+    <aside class="sidebar">
+      <div class="brand"><div class="mark">Δ</div><div><h1>PolyAlpha</h1><p>Prediction Market Intelligence</p></div></div>
+      <nav class="navGroup">
+        <a href="/" data-route="terminal">Terminal <span>live</span></a>
+        <a href="/signals" data-route="signals">Picks <span>Kelly</span></a>
+        <a href="/wallets" data-route="wallets">Wallets <span>rank</span></a>
+        <a href="/feed" data-route="feed">Flow <span>whales</span></a>
+        <a href="/portfolio" data-route="portfolio">Portfolio <span>wallet</span></a>
+        <a href="/compare" data-route="compare">Compare <span>smart $</span></a>
+        <a href="/backtest" data-route="backtest">Analytics <span>chart</span></a>
+        <a href="/notifications" data-route="notifications">Alerts <span>email</span></a>
+        <a href="/settings" data-route="settings">Settings <span>config</span></a>
+      </nav>
+      <div class="sideActions">
+        <button id="quickScan" class="secondary">Run smart scan</button>
+        <button id="refresh" class="ghost">Refresh current page</button>
+        <div class="status"><span id="apiDot"></span><span id="apiText">checking API</span></div>
+      </div>
+    </aside>
+    <main>
+      <header class="topbar">
+        <div><p class="eyebrow">PolyAlpha Terminal</p><h2 id="pageTitle">Terminal</h2><p id="pageSub" class="muted small">Decision-first smart-money dashboard.</p></div>
+        <div class="toolbar">
+          <input id="globalWallet" placeholder="0x wallet for portfolio/compare" />
+          <button id="saveWallet">Save wallet</button>
+        </div>
+      </header>
+      <section id="notice" class="notice hidden"></section>
+      <section id="content" class="grid"></section>
+    </main>
+  </div>
+  <script src="/app.js"></script>
+</body>
+</html>
