@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>PolyAlpha Terminal</title>
+  <link rel="stylesheet" href="/style.css" />
+</head>
+<body>
+  <div class="shell">
+    <aside class="sidebar">
+      <div class="brand"><div class="mark">Δ</div><div><h1>PolyAlpha</h1><p>Prediction Market Intelligence</p></div></div>
+      <nav>
+        <a href="/" data-route="terminal">Terminal</a>
+        <a href="/signals" data-route="signals">Signals</a>
+        <a href="/wallets" data-route="wallets">Wallets</a>
+        <a href="/feed" data-route="feed">Flow</a>
+        <a href="/portfolio" data-route="portfolio">Portfolio</a>
+        <a href="/compare" data-route="compare">Compare</a>
+        <a href="/backtest" data-route="backtest">Backtest</a>
+        <a href="/settings" data-route="settings">Settings</a>
+      </nav>
+      <button id="quickScan" class="secondary">Run scan</button>
+      <button id="refresh" class="ghost">Refresh</button>
+      <div class="status"><span id="apiDot"></span><span id="apiText">checking API</span></div>
+    </aside>
+    <main>
+      <header class="topbar">
+        <div><p class="eyebrow">PolyAlpha Terminal</p><h2 id="pageTitle">Terminal</h2></div>
+        <div class="toolbar">
+          <input id="globalWallet" placeholder="0x wallet for portfolio/compare" />
+          <button id="saveWallet">Save wallet</button>
+        </div>
+      </header>
+      <section id="notice" class="notice hidden"></section>
+      <section id="content" class="grid"></section>
+    </main>
+  </div>
+  <script src="/app.js"></script>
+</body>
+</html>
