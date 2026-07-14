@@ -1,0 +1,14 @@
+PolyAlpha Terminal v5.0
+
+- New public marketing homepage inspired by professional trading terminals
+- Compact TradingView-style application shell and navigation
+- Silent 5/10/30-second background data sync (no page rerender interruption)
+- New Sports Arbitrage scanner for cached Soccer, Tennis, Basketball and UFC pairs
+- New detailed Documentation section
+- Default bankroll set to $100 and removed from Home
+- Improved professional selects, segmented controls, tables, cards and typography
+- Removed visible admin controls; protected scans request the private token only when needed
+- Quality-adjusted wallet rankings remain focused on consistency and sample size
+- Mobile bottom navigation, responsive tables, loading states and custom 404 page
+- Session export/import, notes, watchlists, market expiry countdowns and risk sizing retained
+- Existing API rate limiting, CORS restrictions, CSP and security headers retained
