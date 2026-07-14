@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>PolyAlpha Terminal</title>
+  <meta name="description" content="Smart-money intelligence terminal for Polymarket." />
+  <link rel="stylesheet" href="/style.css" />
+</head>
+<body>
+  <div class="app-shell">
+    <aside class="sidebar">
+      <a href="/" class="brand" data-route="home" aria-label="PolyAlpha Terminal">
+        <span class="brand-mark">P/α</span>
+        <span><b>PolyAlpha</b><small>Prediction Market Intelligence</small></span>
+      </a>
+      <nav class="nav" aria-label="Main navigation">
+        <a href="/" data-route="home">Home <span>intro</span></a>
+        <a href="/terminal" data-route="terminal">Terminal <span>live</span></a>
+        <a href="/signals" data-route="signals">Signals <span>EV</span></a>
+        <a href="/wallets" data-route="wallets">Wallets <span>rank</span></a>
+        <a href="/flow" data-route="flow">Flow <span>whales</span></a>
+        <a href="/watchlist" data-route="watchlist">Watchlist <span>saved</span></a>
+        <a href="/portfolio" data-route="portfolio">Portfolio <span>0x</span></a>
+        <a href="/compare" data-route="compare">Compare <span>sync</span></a>
+        <a href="/analytics" data-route="analytics">Analytics <span>chart</span></a>
+        <a href="/alerts" data-route="alerts">Alerts <span>email</span></a>
+      </nav>
+      <div class="side-panel">
+        <div class="mini-label">Automation</div>
+        <button id="quickScan" class="primary smallbtn">Run scan</button>
+        <button id="refresh" class="ghost smallbtn">Refresh</button>
+        <div class="api-status"><span id="apiDot"></span><span id="apiText">checking API</span></div>
+      </div>
+    </aside>
+    <main class="main">
+      <header class="topbar">
+        <div>
+          <p class="eyebrow">PolyAlpha Terminal</p>
+          <h1 id="pageTitle">Home</h1>
+          <p id="pageSub">Smart-money intelligence for Polymarket.</p>
+        </div>
+        <div class="top-actions minimal">
+          <button id="commandOpen" class="ghost command-open" title="Open command palette">⌘K</button>
+          <label class="refresh-control">Auto <select id="refreshRate"><option value="0">Off</option><option value="15">15s</option><option value="30">30s</option><option value="60">60s</option></select></label>
+          <div class="freshness"><span id="freshDot"></span><b id="freshText">checking</b></div>
+          <div class="clock"><span>Local</span><b id="localClock">--:--:--</b></div>
+        </div>
+      </header>
+      <section id="notice" class="notice hidden"></section>
+      <section id="content" class="content-grid"></section>
+    </main>
+  </div>
+  <div id="commandPalette" class="command-palette hidden" role="dialog" aria-modal="true" aria-label="Command palette">
+    <div class="command-box">
+      <div class="command-head"><input id="commandSearch" placeholder="Search pages and actions…" autocomplete="off"><kbd>Esc</kbd></div>
+      <div id="commandResults" class="command-results"></div>
+    </div>
+  </div>
+  <script src="/app.js"></script>
+</body>
+</html>

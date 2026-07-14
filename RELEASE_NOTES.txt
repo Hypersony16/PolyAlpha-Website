@@ -1,0 +1,12 @@
+PolyAlpha Website v4.8
+Professional interaction and intelligence update
+
+Added:
+- Watchlist for markets and wallets
+- Command palette (Ctrl/Cmd+K)
+- Configurable auto refresh
+- API health and data freshness indicator
+- Wallet and whale-flow live filters
+- Expanded analytics with backtest and wallet clusters
+- Improved operational health diagnostics
+- Versioned server endpoint /api/health
