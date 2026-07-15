@@ -1,0 +1,11 @@
+PolyAlpha Terminal v5.0.2 — Stability & Interaction Fix
+
+- Fixed `empty is not defined` across Terminal, Arbitrage, Notes, Watchlist and empty-result views.
+- Router now awaits async page rendering and catches errors reliably.
+- Added useful empty states instead of blank tables.
+- Portfolio automatically loads a saved wallet, validates addresses and shows retryable errors.
+- Analytics series now use correct labels, units and data mappings.
+- Improved chart scaling, hover tooltips and active timeframe/series state.
+- Added sidebar, documentation, button and card hover animations.
+- Added reduced-motion support and mobile-safe documentation navigation.
+- Added explicit empty wallet-flow rendering.
