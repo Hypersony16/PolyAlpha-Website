@@ -1,0 +1,21 @@
+PolyAlpha Terminal v5.1 — Analog Intelligence UI
+
+- Merged the Lovable Analog Logic Print visual system with the complete PolyAlpha application.
+- Added an interactive landing-product preview for Markets, Signals, Wallets, Arbitrage and Portfolio.
+- Added animated intelligence graphics, subtle scroll reveals and live-status motion.
+- Added responsive landing navigation and mobile-safe preview panels.
+- Preserved the complete v5 functionality, including the manual 2-way/3-way arbitrage calculator.
+- Added restrained hover and transition states across terminal cards, tables and navigation.
+- Added reduced-motion accessibility behavior.
+
+PolyAlpha Terminal v5.0.2 — Stability & Interaction Fix
+
+- Fixed `empty is not defined` across Terminal, Arbitrage, Notes, Watchlist and empty-result views.
+- Router now awaits async page rendering and catches errors reliably.
+- Added useful empty states instead of blank tables.
+- Portfolio automatically loads a saved wallet, validates addresses and shows retryable errors.
+- Analytics series now use correct labels, units and data mappings.
+- Improved chart scaling, hover tooltips and active timeframe/series state.
+- Added sidebar, documentation, button and card hover animations.
+- Added reduced-motion support and mobile-safe documentation navigation.
+- Added explicit empty wallet-flow rendering.
